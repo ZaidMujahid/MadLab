@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Image Example',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Image Example'),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Image.asset(
+                'images/image1.jpg',
+                width: 200.0,
+                height: 200.0,
+              ),
+              SizedBox(height: 16.0),
+              Image.network(
+                'https://picsum.photos/200',
+                width: 200.0,
+                height: 200.0,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
