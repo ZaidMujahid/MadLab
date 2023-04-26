@@ -1,2 +1,2 @@
 # MadLab
-Code for MAD & PWA Experiment
+Code for MAD & PWA Practical
